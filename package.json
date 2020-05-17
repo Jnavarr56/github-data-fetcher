@@ -1,0 +1,32 @@
+{
+  "name": "github-data-fetcher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "github-data-fetcher.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node github-data-fetcher.js",
+    "pretty": "prettier --write github-data-fetcher.js",
+    "lint": "eslint --fix github-data-fetcher.js"
+  },
+  "husky": {
+		"hooks": {
+			"pre-commit": "pretty && lint"
+		}
+	},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/rest": "^17.9.0",
+    "chalk": "^4.0.0",
+    "dotenv": "^8.2.0",
+    "husky": "^4.2.5",
+    "ora": "^4.0.4",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "eslint": "^7.0.0",
+    "prettier": "^2.0.5"
+  }
+}

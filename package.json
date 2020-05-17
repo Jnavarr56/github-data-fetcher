@@ -10,10 +10,10 @@
     "lint": "eslint --fix github-data-fetcher.js"
   },
   "husky": {
-		"hooks": {
-			"pre-commit": "pretty && lint"
-		}
-	},
+    "hooks": {
+      "pre-commit": "pretty && lint"
+    }
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

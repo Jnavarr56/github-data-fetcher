@@ -214,7 +214,7 @@ process.on("SIGINT", function () {
 	console.log("");
 
 	const printSpinner = ora({
-		text: chalk.yellow(`Pretty printing data to ${__dirname}/events.json`),
+		text: chalk.yellow(`Pretty printing data to ${__dirname}/${USERNAME}.json`),
 		color: "yellow"
 	}).start();
 
@@ -227,7 +227,7 @@ process.on("SIGINT", function () {
 
 		const json = JSON.stringify({ events }, null, 1);
 
-		fs.writeFileSync("events.json", json);
+		fs.writeFileSync(`${USERNAME}.json`, json);
 
 		ora({
 			indent: 2,
